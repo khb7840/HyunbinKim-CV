@@ -1,0 +1,261 @@
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% font family
+
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\usepackage{standalone}
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{helvet}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.85]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%\usepackage[utf8]{inputenc}
+
+%\usepackage{booktabs}
+\usepackage{fontawesome}
+\usepackage{marvosym} % For cool symbols.
+%\usepackage{hyperref}
+
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Hyunbin} % Your first name
+\familyname{Kim} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{School of Biological Sciences}{Seoul National University}
+\mobile{(+82)10-9197-2561}
+
+
+%\fax{(000) 111 1113}
+ 
+% \social{github}{stefano-bragaglia}
+\email{khb7840@gmail.com} 
+\homepage{www.hyunbinkim.com/}{hyunbinkim.com}
+
+% social link \faGithub, \faSkype, \faLinkedin,\faStackExchange, and \faStackOverflow
+\extrainfo{
+    \faGithub\href{https://github.com/khb7840}{ Github} \quad
+    % \faLinkedin\href{https://www.linkedin.com/khb7840/}{ Linkedin} \quad
+}
+
+
+
+%\social[linkedin][www.linkedin.com]{name}
+% The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
+
+\photo[70pt][0.3pt]{face_picture.png} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
+%\quote{Not Attention, Patience is all we need.}
+
+%----------------------------------------------------------------------------------------
+
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvitem[.75em]{}{%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#2\end{minipage}%
+    }%
+}
+
+
+
+\usepackage{multibbl}
+\newcommand\Colorhref[3][orange]{\href{#2}{\small\color{#1}#3}}
+
+
+% \newcommand{\cvreference}[7]{%
+%     \textbf{#1}\newline% Name
+%     \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+%     \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+%     \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+%     \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+%     \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
+%     \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2021--present}{PhD, Interdisciplinary Program in Bioinformatics}{Seoul National University}{Seoul, South Korea}{}
+{Protein structure, Protein structure compression, Structural motif search, Protein structure prediction, \textit{De novo} protein design, Development of scalable bioinformatics methods
+}  % Arguments not required can be left empty
+\cvitem{Advisor :}{\textbf{Dr. Martin Steinegger}, \textit{Associate Professor, School of Biological Sciences}, Seoul National University, South Korea ({\Colorhref{https://steineggerlab.com/} {\textit{Lab web-page}}})}
+\cventry{2015--2017 :}{Master of Science in Agricultural Genomics, Interdisciplinary Program in Agricultural Genomics}{Seoul National University}{Seoul, South Korea}{}{Protein-protein interaction network, Fungal plant pathology, Co-expression network}
+\cvitem{Advisor :}{\textbf{Dr. Yong-Hwan Lee}, \textit{Professor, Department of Agricultural Biotechnology}, Seoul National University, South Korea ({\Colorhref{http://www.riceblast.snu.ac.kr/} {\textit{Lab web-page}}})}
+\cventry{2010--2015 :}{Bachelor of Science in Biological Sciences, School of Biological Sciences}{Seoul National University}{Seoul, South Korea}{}{}
+
+% Confirmed
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Research Experience}
+\cventry{2017 -- 2020}{Researcher, Bioinformatics Analysis Team}{National Cancer Center}{Goyang, South Korea}{(Substitution for national service as a technical research personnel)}
+{Developed novel computational methodologies for analysis of mutational signatures on
+tumors samples. Head and neck cancer, Prostate cancer, Somatic mutation analysis on WGS/WES, Bulk RNA-seq analysis}
+\cvitem{Principal Investigator :}{\textbf{Dr. Dongwan Hong}, \textit{Professor, College of Medicine}, Catholic University of Korea ({\Colorhref{http://honglab.catholic.ac.kr/} {\textit{Lab web-page}}})}
+
+% Confirmed
+
+%----------------------------------------------------------------------------------------
+%	SOFTWARE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Software}
+\cventry{2025}{Folddisco}{Written in Rust}{A fast and scalable structural motif search tool}{\Colorhref{https://github.com/steineggerlab/folddisco}{Repository}}{}
+\cventry{2023}{Foldcomp}{Written in C++}{Structure compression with torsion angle}{\Colorhref{https://github.com/steineggerlab/foldcomp}{Repository}}{}
+\cventry{2019}{FIREVAT}{Written in R}{A variant filtering tool using mutational signature}{\Colorhref{https://github.com/cgab-ncc/FIREVAT}{Repository}}{}
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+\section{Publications}
+% \subsection{Journal Article(Accepted)}
+% \cventry{2019}{\textbf{Pratik Dutta}, Sriparna Saha, Sanket Pai and Aviral Kumar}{}{Protein-protein Interaction based Generative Model for Improving Gene Clustering}{In \textit{\textbf{Scientific Reports-Nature}} (\textbf{Impact Factor: 4.12)}}{}
+\subsection{First author}
+\newbibliography{first_author}
+\bibliographystyle{first_author}{plainyrrev}
+\nocite{first_author}{*}
+\bibliography{first_author}{first_author}
+{\large \textsc{Refereed Journal Articles}}
+
+\subsection{Co-author}
+\newbibliography{co_author}
+\bibliographystyle{co_author}{plainyrrev}
+\nocite{co_author}{*}
+\bibliography{co_author}{co_author}
+{\large \textsc{Refereed Journal Articles}}
+
+
+%----------------------------------------------------------------------------------------
+%	Presentations
+%----------------------------------------------------------------------------------------
+
+% Oral presentations
+\section{Presentations}
+\subsection{Oral presentations}
+\newbibliography{conference}
+\nocite{conference}{*}
+\bibliographystyle{conference}{plainyrrev}
+\bibliography{conference}{conference}
+{\large \textsc{Refereed Conference Publications}}
+
+% Poster presentations
+\subsection{Poster presentations}
+\newbibliography{poster}
+\nocite{poster}{*}
+\bibliographystyle{poster}{plainyrrev}
+\bibliography{poster}{poster}
+{\large \textsc{Refereed Conference Publications}}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Programming languages}{\textbf{C++, Rust, R, Python,} C, Go, Shell script}
+\cvitem{Web technologies}{HTML 5, Javascript, Typescript}
+\cvitem{Design software}{Illustrator, Figma, Affinity designer}
+% \cvitem{Bioinformatics tools}{Cytoscape, IGV, ChimeraX, MMseqs2, }
+
+%----------------------------------------------------------------------------------------
+%	Teaching Assistantship SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Teaching Assistant}
+\cventry{Fall, 2021 :}{Advanced Bioinformatics}{}{Seoul National University}{}{Feedback to the student presentation materials for improvement}
+\cventry{Spring, 2021 :}{Introduction to Bioinformatics}{}{Seoul National University}{}{Assignment \& exam design}
+
+
+%----------------------------------------------------------------------------------------
+%	Certificate SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Certificate}
+\cventry{2019}{Certificate of competency in Fundamental of Deep Learning for Natural Language}{NVIDIA Deep Learning Institute}{Seoul, South Korea}{}{}
+
+% \section{Referees}
+
+
+% \begin{tabular}{lr}
+% % Referee 1
+% \begin{minipage}[t]{3in}
+% \textbf{Dr. XXXXX XXXXX}\\
+% \textit{Associate Professor, Department of} \\
+% \textit{Computer Science \& Engineering}\\
+% Institute name\\
+% \Letter\ \href{mailto:abc@gmail.com}{abc@gmail.com}
+% \end{minipage}
+% &
+% % Referee 2
+% \begin{minipage}[t]{3in}
+% \textbf{Dr. XXXXX XXXXX}\\
+% \textit{Associate Professor, Department of} \\
+% \textit{Computer Science \& Engineering}\\
+% Institute name\\
+% \Telefon\ +(601) 877-6236\\
+% \Letter\ \href{mailto:abc@gmail.com}{abc@gmail.com}
+% \end{minipage}
+% \\
+% \\ % Additional newline for spacing.
+% % Referee 3
+% \begin{minipage}[t]{3in}
+% \textbf{Dr. XXXXX XXXXX}\\
+% \textit{Associate Professor, Department of} \\
+% \textit{Computer Science \& Engineering}\\
+% Institute name\\
+% \Telefon\ +(601) 877-6236\\
+% \Letter\ \href{mailto:abc@gmail.com}{abc@gmail.com}
+% \end{minipage}
+% &
+% \\
+% \end{tabular}
+
+
+\end{document}
